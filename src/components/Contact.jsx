@@ -1,11 +1,40 @@
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+// src/components/Contact.jsx
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload } from 'react-icons/fa';
 
 export default function Contact() {
   return (
     <section id="contact" className="py-20 px-6 animate-fadeIn bg-secondary bg-opacity-10">
       <div className="container mx-auto grid md:grid-cols-2 gap-12">
-        {/* Contact Form */}
-        <div>
+        {/* Contact Details (Left) */}
+        <div className="space-y-6 order-2 md:order-1">
+          <h2 className="text-4xl font-bold mb-4">Contact Info</h2>
+
+          {/* Download Resume Button */}
+          <a
+            href="./Choladevi_(Frontend_Developer).pdf"
+            download
+            className="inline-flex items-center px-4 py-2 mb-6 bg-accent text-primary rounded-lg font-medium hover:bg-opacity-90 transition"
+          >
+            <FaDownload className="mr-2" />
+            Download Resume
+          </a>
+
+          <div className="flex items-center text-lg">
+            <FaEnvelope className="text-accent mr-3" />
+            <span>choladevi.gheereddy@gmail.com</span>
+          </div>
+          <div className="flex items-center text-lg">
+            <FaPhone className="text-accent mr-3" />
+            <span>(312)-217-6897</span>
+          </div>
+          <div className="flex items-center text-lg">
+            <FaMapMarkerAlt className="text-accent mr-3" />
+            <span>Chicago, IL</span>
+          </div>
+        </div>
+
+        {/* Contact Form (Right) */}
+        <div className="order-1 md:order-2">
           <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
           <p className="text-lg mb-8">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
@@ -46,23 +75,6 @@ export default function Contact() {
               Send Message
             </button>
           </form>
-        </div>
-
-        {/* Contact Details */}
-        <div className="space-y-6">
-          <h2 className="text-4xl font-bold mb-4">Contact Info</h2>
-          <div className="flex items-center text-lg">
-            <FaEnvelope className="text-accent mr-3" />
-            <span>choladevi.gheereddy@gmail.com</span>
-          </div>
-          <div className="flex items-center text-lg">
-            <FaPhone className="text-accent mr-3" />
-            <span>(312)-217-6897</span>
-          </div>
-          <div className="flex items-center text-lg">
-            <FaMapMarkerAlt className="text-accent mr-3" />
-            <span>Chicago, IL</span>
-          </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Typewriter({
   words = [],
-  typingSpeed = 100,
+  typingSpeed = 190,
   pauseTime = 2000,
   className = '',
 }) {

@@ -78,13 +78,13 @@ export default function About() {
         <div className="flex-1 space-y-6">
           <h2 className="text-4xl font-bold">About Me</h2>
           <p className="text-lg leading-relaxed">
-            Front End Developer with over 5 years of experience building responsive,
+            A Passionate Front End Developer with over 5 years of experience building responsive,
             user-centric web applications using modern JavaScript frameworks - Angular,
             ReactJS, Next.js and TypeScript. Skilled in designing and integrating RESTful
             APIs, implementing robust CI/CD pipelines, and architecting cloud-native solutions
             on AWS and Google Cloud Platform (GCP). Experienced in leveraging AI-powered coding
-            assistants (GitHub Copilot, Cursor) to enhance productivity. Holds an M.S. in
-            Computer Science from IIT Chicago, with a passion for crafting intuitive, high-impact
+            assistants (GitHub Copilot, Cursor) to enhance code quality and productivity. Holds an M.S. in
+            Computer Science from Illinois Tech Chicago, with a passion for crafting intuitive, high-impact
             interfaces and driving innovation.
           </p>
 

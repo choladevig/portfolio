@@ -5,7 +5,7 @@ export default function Experience() {
       company: 'Grey Parrot Systems (Client: BelleTire)',
       logo: './gp.jpeg',
       title: 'Frontend Developer – Intern',
-      period: 'May 2024 – Nov 2024',
+      period: 'May 2024 – Aug 2024',
       details: [
         'Enhanced front-end web applications using ReactJS, Redux, and Next.js, resolving over 15+ critical and high- priority bugs and defects, achieving 100% on-time delivery to production.',
         'Upgraded legacy front-end application built with older versions of ReactJS, NodeJS, NextJS, GraphQL, and Express.js.',
@@ -59,8 +59,8 @@ export default function Experience() {
         <h2 className="text-4xl font-bold mb-6">Work Experience</h2>
         <div className="space-y-8">
           {roles.map((role) => (
-            <div key={role.company} className="p-6 bg-bgSection rounded-lg">
-              <div className="flex items-center gap-4 mb-4">
+            <div key={role.company} className="p-6 bg-bgSection rounded-lg hover:border-accent border-2 border-transparent transition">
+              <div className="flex items-center gap-4 mb-4 ">
                 <img
                   src={role.logo}
                   alt={`${role.company} logo`}
